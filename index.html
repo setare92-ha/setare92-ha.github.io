@@ -4,9 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Setare's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+    .header {
+      width: 98%;
+      height: 200px; /* Adjust the height to fit the image */
+      background-image: url('header-wo-text.jpg'); /* Replace with the image URL */
+      background-size: cover;
+      background-position: center;
+    }
+    h1 {
+      text-align: left; /* Align headings to the left */
+      margin-left: 20px; /* Add some left margin for better spacing */
+      color: #333;
+    }
+    h2 {
+      text-align: left; /* Align headings to the left */
+      margin-left: 20px; /* Add some left margin for better spacing */
+      color: #202020d8;
+    }
+    p {
+      text-align: justify;
+      margin-left: 20px; /* Same as h1 to align properly */
+      margin-right: 20px;
+      line-height: 1.5;
+    } 
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project {
+      width: 250px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .project a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      font-size: 14px; /* Adjust this to make the text smaller */
+    }
+    .tags strong {
+      text-align: left;
+      color: rgb(54, 54, 54); /* Makes "Tags:" grey */
+    }
+    .project .tags {
+      margin: 0;  /* Removes any margin around the tags */
+      padding-left: 0; /* Ensures no extra padding to the left */
+      text-align: left; /* Aligns the tags text to the left */
+      font-size: 14px; /* Keeps it readable */
+      color: black; /* Keeps tags in standard black font */
+      font-weight: normal;
+    }
+
+    .project .tags strong {
+      color: rgb(54, 54, 54); /* Makes "Tags:" grey */
+    }
+  </style>
+
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <p>WIP...</p>
+  <div class="header"> </div>
+  <h1>Setare Hajarolasvadi | Portfolio</h1>
+  <h2> About Me</h2>
+  <p align="left"> My name is Setare. I earned my PhD in 2021 from the University of Illinois at Urbana-Champaign. 
+    I then joined the Spatial Audio team at Meta Reality Labs Research as a research engineer. In this role, 
+    I served as a primary consultant, leveraging simulations, verification & validation (V&V) studies, 
+    and data analytics to inform spatial audio design in AR/VR devices. After an incredible three and a half years 
+    in this role, I transitioned to 4Sight Labs, a public safety startup focused on health monitoring for 
+    incarcerated individuals. As an applied scientist, I led efforts to ensure data collection quality and 
+    developed and deployed machine learning solutions using wearable physiological data for real-time inference. 
+  </p>
+  <p>I love learning new things and solving challenging problems. My work spans a broad range of topics, from wave 
+    propagation in metamaterials to acoustics, data analytics, and machine learning. I enjoy drawing connections 
+    between different fields of science and applying my skills to answer complex questions across disciplines.</p>
+  <h2> Projects </h2>
+  <div class="projects">
+    <div class="project">
+      <img src="project1-image.png" alt="Project 1">
+      <h4>Human Activity Recognition</h4>
+      <p class="tags"><strong>Tags:</strong> neural-networks, time-series-analysis, deep-learning</p>
+      <a href="https://github.com/setare92-ha/har_using_neural_networks" target="_blank">View on GitHub</a>
+    </div>
+    <!-- Project 2 -->
+    <div class="project">
+      <img src="project2-image.jpg" alt="Project 2">
+      <h4>Cardiovascular Event Detection</h4>
+      <p class="tags"><strong>Tags:</strong> random-forest, classification, hyper-parameter-tuning</p>
+      <a href="https://github.com/setare92-ha/cardiovascular_event_detection" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <img src="project3-image.jpg" alt="Project 2">
+      <h4>What Movies to Invest In?</h4>
+      <p class="tags"><strong>Tags:</strong> regression, data-cleaning-and-preprocessing, web-scraping</p>
+      <a href="https://github.com/setare92-ha/movie_profit_analysis" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <img src="project4-image.jpg" alt="Project 2">
+      <h4>Aviation Safety</h4>
+      <p class="tags"><strong>Tags:</strong> data-cleaning-and-preprocessing, eda, data-to-insights</p>
+      <a href="https://github.com/setare92-ha/aviation-accidents" target="_blank">View on GitHub</a>
+    </div>
+  </div>
 </body>
 </html>
