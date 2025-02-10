@@ -11,12 +11,16 @@
       background-color: #f4f4f4;
     }
     .header {
-      width: 98%;
-      height: 200px; /* Adjust the height to fit the image */
-      background-image: url('header-wo-text.png'); /* Replace with the image URL */
-      background-size: cover;
+      background-image: url('header-wo-text.png'); 
+      background-size: cover;  /* Ensures it covers the full div */
       background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: calc(100% - 40px);  /* Adjusts width to account for margins */
+      padding: 20px;  /* Adds space inside the div */
+      display: block;
     }
+
     h1 {
       text-align: left; /* Align headings to the left */
       margin-left: 20px; /* Add some left margin for better spacing */
