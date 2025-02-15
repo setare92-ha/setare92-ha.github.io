@@ -31,6 +31,25 @@
       margin-left: 20px; /* Add some left margin for better spacing */
       color: #202020d8;
     }
+    h3 {
+      text-align: left; /* Align headings to the left */
+      margin-left: 20px; /* Add some left margin for better spacing */
+      margin-bottom: 5px;
+      color: #0357b1;
+    }
+    .job-entry {
+      display: flex;
+      justify-content: space-between; /* Pushes items to left & right */
+      align-items: baseline; /* Keeps text aligned properly */
+      width: 100%; /* Ensures it takes full width */
+    }
+
+  .job-date {
+      text-align: right; /* Right-aligns the date & location */
+      margin-right: 20px;
+      min-width: 200px; /* Adjust width as needed */
+    }
+
     p {
       text-align: justify;
       margin-left: 20px; /* Same as h1 to align properly */
@@ -103,7 +122,28 @@
   <p>I love learning new things and solving challenging problems. My work spans a broad range of topics, from wave 
     propagation in metamaterials to acoustics, data analytics, and machine learning. I enjoy drawing connections 
     between different fields of science and applying my skills to answer complex questions across disciplines.</p>
-  <h2> Projects </h2>
+  
+    <h2> Professional Experience</h2>
+    <div class="job-entry">
+      <h3>Applied Scientist, 4Sight Labs</h3>
+      <div class="job-date">
+          <b>Seattle</b>, 08/2024 - 12/2024
+      </div>
+    </div>
+    <p align="left"> Led data analytics and machine learning efforts using wearable data to drive business decisions. </p>
+    <p align="left"> <b>Stack</b>: Python, SQL, Azure Cloud Services, Git, scikit-learn, TensorFlow, Seaborn, Plotly </p>
+    
+    <div class="job-entry">
+      <h3>Research Engineering Consultant, Meta</h3>
+      <div class="job-date">
+          <b>Seattle</b>, 04/2021 - 07/2024
+      </div>
+    </div>
+    <p align="left"> Served as a primary research consultant utilizing simulations, statistical analysis, and data analytics
+      to inform spatial audio design in AR/VR devices.
+    <p align="left"> <b>Stack</b>: Python, Mercurial, Linux, MATLAB, Unity, C++, Docker </p>
+    
+  <h2> Personal Projects </h2>
   <div class="projects">
     <div class="project">
       <img src="project1-image.png" alt="Project 1">
